@@ -1,0 +1,55 @@
+{
+  "name": "corp104-corp104_ssm_agent",
+  "description": "ssm agent Module for Debian, Ubuntu, CentOS and RHEL.",
+  "version": "0.1.4",
+  "author": "104corp",
+  "summary": "Install, deploysm, and configures ssm agent services.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/corp104/puppet-corp104_ssm_agent",
+  "project_page": "https://github.com/shazi7804/puppet-corp104_ssm_agent",
+  "issues_url": "https://github.com/shazi7804/puppet-corp104_ssm_agent/issues",
+  "tags": [
+    "ec2 run command",
+    "ssm agent",
+    "aws"
+  ],
+  "dependencies": [
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": "4.7.0 < 5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "16.04"
+      ]
+    }
+  ]
+}
+

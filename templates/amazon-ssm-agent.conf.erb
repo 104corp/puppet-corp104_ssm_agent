@@ -1,0 +1,17 @@
+description "Amazon SSM Agent"
+author "Amazon.com"
+
+start on (runlevel [345] and started network)
+stop on (runlevel [!345] or stopping network)
+
+respawn
+
+<% if scope.lookupvar('ssm_agent::proxy') -%>
+env http_proxy=<%= scope.lookupvar('ssm_agent::proxy') %>
+<% end -%>
+<% if scope.lookupvar('ssm_agent::no_proxy') -%>
+env no_proxy=<%= scope.lookupvar('ssm_agent::no_proxy') %>
+<% end -%>
+
+chdir /usr/bin/
+exec ./amazon-ssm-agent

@@ -1,0 +1,3 @@
+corp104_ssm_agent::osver: 'linux_amd64'
+corp104_ssm_agent::package_type: 'rpm'
+corp104_ssm_agent::package_provider: 'rpm'
