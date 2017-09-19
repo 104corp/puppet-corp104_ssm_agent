@@ -49,7 +49,6 @@ class corp104_ssm_agent (
   String $package_type,
   String $package_name,
   String $systemd_file,
-  String $ssm_agent_download_url,
   Boolean $manage_service,
   String $service_name,
   Boolean $proxy_install_manage,
