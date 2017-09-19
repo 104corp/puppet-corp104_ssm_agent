@@ -1,5 +1,5 @@
 class corp104_ssm_agent::service inherits corp104_ssm_agent {
-  if $corp104_ssm_agent::manage_service {
+  if $corp104_ssm_agent::manage_service and $facts['ec2_metadata'] {
     case $facts['osfamily'] {
       'Debian': {
         service { $corp104_ssm_agent::service_name:
