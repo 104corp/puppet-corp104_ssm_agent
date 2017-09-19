@@ -1,7 +1,7 @@
 corp104_ssm_agent::osver: 'debian_amd64'
 corp104_ssm_agent::package_type: 'deb'
 corp104_ssm_agent::package_provider: 'dpkg'
-corp104_ssm_agent::ssm_agent_download_url: "https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/%{hiera('ssm_agent::osver')}/amazon-ssm-agent.%{hiera('ssm_agent::package_type')}"
+corp104_ssm_agent::ssm_agent_download_url: "https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/%{hiera('corp104_ssm_agent::osver')}/amazon-ssm-agent.%{hiera('corp104_ssm_agent::package_type')}"
 corp104_ssm_agent::ssm_tmp_file: '/var/tmp/install_ssmagent'
 corp104_ssm_agent::package_name: 'amazon-ssm-agent'
 corp104_ssm_agent::manage_service: true
