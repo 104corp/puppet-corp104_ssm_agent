@@ -18,7 +18,7 @@ class corp104_ssm_agent::install inherits corp104_ssm_agent {
     ensure    => 'installed',
     name      => $corp104_ssm_agent::package_name,
     provider  => $corp104_ssm_agent::package_provider,
-    source    => $ssm_agent::ssm_tmp_file,
+    source    => $corp104_ssm_agent::ssm_tmp_file,
     subscribe => Exec['download_ssm-agent'],
   }
 }
