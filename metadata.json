@@ -1,5 +1,5 @@
 {
-  "name": "corp104-corp104_ssm_agent",
+  "name": "104corp-corp104_ssm_agent",
   "description": "ssm agent Module for Debian, Ubuntu, CentOS and RHEL.",
   "version": "0.1.4",
   "author": "104corp",
