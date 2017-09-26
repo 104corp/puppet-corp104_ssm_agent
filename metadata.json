@@ -1,7 +1,7 @@
 {
   "name": "104corp-corp104_ssm_agent",
   "description": "ssm agent Module for Debian, Ubuntu, CentOS and RHEL.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "104corp",
   "summary": "Install, deploysm, and configures ssm agent services.",
   "license": "Apache-2.0",
@@ -18,7 +18,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": "4.7.0 < 5.0.0"
+      "version_requirement": "4.7.0 < 6.0.0"
     }
   ],
   "operatingsystem_support": [

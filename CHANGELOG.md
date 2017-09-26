@@ -1,3 +1,7 @@
+## 2017-09-26 - Release 0.1.6
+
+- support CentOS 6/7
+
 ## 2017-09-19 - Release 0.1.5
 
 - fix ssm_tmpe_file.
